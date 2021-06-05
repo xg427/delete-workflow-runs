@@ -1,0 +1,32 @@
+name: 'Delete workflow runs'
+description: 'An action to delete workflow runs in a repository.'
+author: 'Bright Ran'
+
+inputs:
+  token:
+    description: 'The token used to authenticate.'
+    required: true
+    default: ${{ github.token }}
+
+  repository:
+    description: 'The name of the repository.'
+    required: true
+    default: ${{ github.repository }}
+
+  retain_min:
+    description: 'The number of minutes.'
+    required: true
+    default: 60
+
+  keep_minimum_runs:
+    description: 'The minimum runs to keep for each workflow.'
+    required: true
+    default: 1
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'delete'
+  color: 'red'

@@ -1,3 +1,5 @@
+import from [https://github.com/small-5/delete-workflow-runs.git](https://github.com/small-5/delete-workflow-runs.git)
+---
 # delete-workflow-runs v2
 The GitHub action to delete workflow runs in a repository. This action (written in JavaScript) wraps two Workflow Runs API:
 * [**List repository workflows**](https://docs.github.com/en/free-pro-team@latest/rest/reference/actions#list-repository-workflows) -- Lists the workflows in a repository.
